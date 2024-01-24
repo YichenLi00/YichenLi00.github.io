@@ -1,4 +1,4 @@
-I am a 3rd-year CSE Ph.D. student at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk), under the supervision of [Prof. Michael R. Lyu](https://www.cse.cuhk.edu.hk/lyu/) (IEEE & ACM Fellow).
+I am a 3rd-year CSE Ph.D. student at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk), under the supervision of [Prof. Michael R. Lyu](https://www.cse.cuhk.edu.hk/lyu/)
 
 Previously, I received my Bachelor's degree in Information Security from Huazhong University of Science and Technology in 2021.
 
