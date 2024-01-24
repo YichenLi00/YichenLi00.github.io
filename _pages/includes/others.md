@@ -6,7 +6,6 @@
 
 
 # 🎖 Honors and Awards
-- Postgraduate Studentship, The Chinese University of Hong Kong.
 - National Scholarship, Ministry of Education of the P.R. China. 2021.
 - National Scholarship, Ministry of Education of the P.R. China. 2020.
 - Star of Tomorrow, Microsoft Research Asia.
