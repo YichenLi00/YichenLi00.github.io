@@ -13,11 +13,11 @@
 
 
 
-# 💻 Internships
-- 2022.04 - 2022.07: Microsoft Research Asia. China.
-- 2020.11 - 2021.06: Microsoft Research Asia. China.
-- 2020.03 - 2020.05: NISL@Tsinghua University. China
-- 2020.01 - 2020.03: Qianxin Research. China
+# 🏃 Experiences
+- 2022.04 - 2022.07: Research Intern, Microsoft Research Asia. China.
+- 2020.11 - 2021.06: Research Intern, Microsoft Research Asia. China.
+- 2020.03 - 2020.05: Research Assistant, NISL@Tsinghua University. China
+- 2020.01 - 2020.03: Research Intern, Qianxin Research. China
 
 
 
