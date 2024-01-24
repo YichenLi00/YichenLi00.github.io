@@ -1,8 +1,6 @@
 # 📖 Educations
 - 2021.08 ~ present Ph.D. student, Chinese University of Hong Kong
 - 2017.09 ~ 2021.06 Bachelor degree, Huazhong University of Science and Technology
-  - GPA: 3.91/4.0
-
 
 
 # 🎖 Honors and Awards
