@@ -1,4 +1,5 @@
 # 🔥 News
+- [05/2024] 💪 I will join the Microsoft Azure Systems Research group as a research intern this summer. Meet me @Redmond☕️!
 - [04/2024] Check the first & most large-scale empirical study *LogBench* about "LLMs for logging" [[Paper](https://arxiv.org/abs/2307.05950)] [[LogBench](https://github.com/YichenLi00/LoggingStudy)]!
 - [01/2024] 🎉 Our *SCLogger* and *LILAC* have been accepted without revision by **FSE24** (56/483).
 - [01/2024] 🎉 Our *IDECoder* has been accepted by **ICSE-LLM4Code**.
