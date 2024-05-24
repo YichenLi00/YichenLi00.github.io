@@ -18,8 +18,4 @@
 
 
 # 💼 Services
-- 2024: Reviewer for IoTJ, Sub-reviewer for TSE
-- 2023: Sub-reviewer for FSE'24, ISSRE'23, ICPE'24, PRDC'23
-- 2022: Sub-reviewer for FSE'23, DSN'23
-- 2021: Sub-reviewer for ISSRE'22, DSN'22, FSE'22
-
+- 2024: Reviewer for IoTJ, PC Member for Fast Abstract Track of ISSRE
