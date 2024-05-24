@@ -18,4 +18,4 @@
 
 
 # 💼 Services
-- 2024: Reviewer for IoTJ, PC Member for Fast Abstract Track of ISSRE
+- 2024: PC Member for Fast Abstract Track of ISSRE, Reviewer for IEEE Internet of Things Journal(IoTJ)
