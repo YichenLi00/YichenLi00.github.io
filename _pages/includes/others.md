@@ -11,6 +11,7 @@
 
 
 # 🏃 Experiences
+- 2024.06 - 2024.09: Research Intern, Microsoft Research. US.
 - 2022.04 - 2022.07: Research Intern, Microsoft Research Asia. China.
 - 2020.11 - 2021.06: Research Intern, Microsoft Research Asia. China.
 - 2020.03 - 2020.05: Research Assistant, NISL@Tsinghua University. China
