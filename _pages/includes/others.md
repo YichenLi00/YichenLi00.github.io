@@ -19,4 +19,12 @@
 
 
 # 💼 Services
-- 2024: PC Member for Fast Abstract Track of ISSRE, Reviewer for IEEE Internet of Things Journal (IoTJ)
+- Program Committee: ISSRE'24 (Fast Abstract Track)
+- Reviewer: 
+  - 2024: IEEE Transactions on Information Forensics & Security (TIFS)
+  - 2024: IEEE Internet of Things Journal (IoTJ)
+- Sub-reviewer: 
+  - 2024: FSE, ISSTA, ISSRE
+  - 2023: DSN, FSE, ISSRE, ICPE
+  - 2022: FSE, ISSRE
+  - 2021: DSN, ICSE
