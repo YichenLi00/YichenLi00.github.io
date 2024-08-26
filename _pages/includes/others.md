@@ -23,6 +23,7 @@
 - Reviewer: 
   - 2024: IEEE Transactions on Information Forensics & Security (TIFS)
   - 2024: IEEE Internet of Things Journal (IoTJ)
+  - 2024：IEEE Transactions on Reliability (TR)
 - Sub-reviewer: 
   - 2024: FSE, ISSTA, ISSRE
   - 2023: DSN, FSE, ISSRE, ICPE
