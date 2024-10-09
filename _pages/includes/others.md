@@ -19,8 +19,9 @@
 
 
 # 💼 Services
-- Program Committee: ISSRE'24 (Fast Abstract Track)
-- Reviewer: 
+- Program Committee: ISSRE'24 (Fast Abstract Track), MSR'25 (Junior PC)
+- Reviewer:
+  - 2024: ACM Transactions on Software Engineering and Methodology (TOSEM)
   - 2024: IEEE Transactions on Information Forensics & Security (TIFS)
   - 2024: IEEE Internet of Things Journal (IoTJ)
   - 2024: IEEE Transactions on Reliability (TR)
