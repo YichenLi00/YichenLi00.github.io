@@ -24,7 +24,7 @@
   - 2024: ISSRE'24 (Fast Abstract Track)
 - Reviewer:
   - 2025: ACM Transactions on Software Engineering and Methodology (TOSEM)
-  - 2024: IEEE Transactions on Software Engineering (TSE), ACM Transactions on Software Engineering and Methodology (TOSEM), IEEE Transactions on Information Forensics & Security (TIFS), IEEE Internet of Things Journal (IoTJ), 2024: IEEE Transactions on Reliability (TR)
+  - 2024: IEEE Transactions on Software Engineering (TSE), ACM Transactions on Software Engineering and Methodology (TOSEM), IEEE Transactions on Information Forensics & Security (TIFS), IEEE Internet of Things Journal (IoTJ), IEEE Transactions on Reliability (TR)
 - Sub-Reviewer:
   - 2025: ATC
   - 2024: FSE, ISSTA, ISSRE
