@@ -20,7 +20,7 @@
 
 # 💼 Services
 - Program Committee:
-  - 2025: MSR'25 (Junior PC), APSEC'25
+  - 2025: ISSRE'25, APSEC'25, MSR'25 (Junior PC)
   - 2024: ISSRE'24 (Fast Abstract Track)
 - Reviewer:
   - 2025: ACM Transactions on Software Engineering and Methodology (TOSEM)
