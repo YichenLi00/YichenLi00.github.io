@@ -25,7 +25,7 @@
   - 2025: ISSRE'25, EUROSYS'26 (Shadow PC), APSEC'25, FORGE'26, MSR'25 (Junior PC)
   - 2024: ISSRE'24 (Fast Abstract Track)
 - Reviewer:
-  - ACM Transactions on Software Engineering and Methodology (TOSEM), IEEE Transactions on Software Engineering (TSE), ACM Computing Survey (CSUR),IEEE Transactions on Information Forensics & Security (TIFS), IEEE Internet of Things Journal (IoTJ), IEEE Transactions on Reliability (TR)
+  - ACM Transactions on Software Engineering and Methodology (TOSEM), IEEE Transactions on Software Engineering (TSE), ACM Computing Survey (CSUR), IEEE Transactions on Information Forensics & Security (TIFS), IEEE Internet of Things Journal (IoTJ), IEEE Transactions on Reliability (TR)
 - Sub-Reviewer:
   - 2025: ATC
   - 2024: FSE, ISSTA, ISSRE
