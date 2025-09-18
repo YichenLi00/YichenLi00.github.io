@@ -1,5 +1,5 @@
 # 🔥 News
-- [09/2025] 🎉 Our *LogImprover*, *ErrorPrism*, *LogPilot* has been accepted by **ASE25**.
+- [09/2025] 🎉 Our *LogImprover*, *ErrorPrism*, *LogPilot* have been accepted by **ASE25**.
 - [07/2025] 🎉 Passed my thesis defense!
 - [05/2025] 🎉 Our *COFFE* has won the <span style="color:red">**ACM SIGSOFT Distinguished Paper Award**</span>
 - [01/2025] 🎉 Our *COCA* has been accepted by **ICSE25**.
