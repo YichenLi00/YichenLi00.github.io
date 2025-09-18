@@ -1,4 +1,6 @@
 # 🔥 News
+- [09/2025] 🎉 Our *LogImprover*, *ErrorPrism*, *LogPilot* has been accepted by **ASE25** Industry Track.
+- [07/2025] 🎉 Passed my thesis defense!
 - [05/2025] 🎉 Our *COFFE* has won the <span style="color:red">**ACM SIGSOFT Distinguished Paper Award**</span>
 - [01/2025] 🎉 Our *COCA* has been accepted by **ICSE25**.
 - [05/2024] I will join the [Microsoft Azure Systems Research group](https://www.microsoft.com/en-us/research/group/azure-research-systems/overview/) as a research intern this summer. Meet me @Redmond!
