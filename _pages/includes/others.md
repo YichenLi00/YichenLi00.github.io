@@ -1,5 +1,5 @@
 # 📖 Educations
-- 2021.08 ~ present Ph.D. student, Chinese University of Hong Kong
+- 2021.08 ~ 2025.10 Ph.D. student, Chinese University of Hong Kong
 - 2017.09 ~ 2021.06 Bachelor degree, Huazhong University of Science and Technology
 
  
