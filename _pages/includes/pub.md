@@ -1,5 +1,8 @@
 # 📝 Selected Publications 
 (* Equal contribution, # Corresponding author)
+- `FSE'26` **Yichen Li**, Qiye Lin, Yun Peng, Zhihan Jiang, Jinyang Liu, Chaozheng Wang, Yintong Huo, Cuiyun Gao. "One Size Does Not Fit All: Revisiting Code Context Engineering for Repository-Level Code Generation". The ACM International Conference on the Foundations of Software Engineering, Montreal, Canada, July 2026.
+- `FSE'26` Chaozheng Wang, Zezhou Yang, Shuzheng Gao, Cuiyun Gao, Zongjie Li, **Yichen Li**, Ting Peng, Hailiang Huang, Yuetang Deng, Michael R. Lyu. "Cascaded Code Editing: Large-Small Model Collaboration for Effective and Efficient Code Editing". The ACM International Conference on the Foundations of Software Engineering,
+  Montreal, Canada, July 2026.
 - `EuroSys'26` Jinyang Liu, **Yichen Li**, Tieying Zhang, Binbin Chen, Xiao He, Zhihan Jiang, Haipeng Zhang, Gang Wu, Yi Li. "Proactive Change Risk Detection in Production Cloud Systems: ByteDance Experience". The European Conference on Computer Systems, Edinburgh, United Kingdom, Apr 2026.
 - `ICPC'26` Renyi Zhong, Yintong Huo, Wenwei Gu, **Yichen Li**#, Michael R. Lyu. "[AutoLogger: A Multi-Agent Framework for the End-to-End Automated Logging](https://arxiv.org/abs/2509.26463)". The 34th IEEE/ACM International Conference on Program Comprehension, Rio de Janeiro, Brazil, May 2026.
 - `TOSEM` Renyi Zhong, **Yichen Li**, Guangba Yu, Wenwei Gu, Jinxi Kuang, Yintong Huo, Michael R. Lyu. "Larger is Not Always Better: Exploring Small Open-Source Language Models in Logging Statement Generation". ACM Transactions on Software Engineering and Methodology (Journal-First).
