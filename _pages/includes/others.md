@@ -12,7 +12,7 @@
 
 
 # 🏃 Experiences
-- 2024.11 - Now: Research Intern, ByteBrain@ByteDance. China.
+- 2024.11 - 2025.10: Research Intern, ByteBrain@ByteDance. China.
 - 2024.06 - 2024.09: Research Intern, Azure System Research@Microsoft Research. US.
 - 2022.04 - 2022.07: Research Intern, DKI@Microsoft Research Asia. China.
 - 2020.11 - 2021.06: Research Intern, DKI@Microsoft Research Asia. China.
