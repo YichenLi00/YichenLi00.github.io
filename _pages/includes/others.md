@@ -21,6 +21,7 @@
 
 # 💼 Services
 - Program Committee:
+  - 2026: ISSRE'26 (Industry Track), AIWare'26 (Dataset Track)
   - 2025: ISSRE'25, EUROSYS'26 (Shadow PC), APSEC'25, FORGE'26, MSR'25 (Junior PC)
   - 2024: ISSRE'24 (Fast Abstract Track)
 - Review Committee:
