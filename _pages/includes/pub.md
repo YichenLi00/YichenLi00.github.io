@@ -1,5 +1,6 @@
 # 📝 Selected Publications 
 (* Equal contribution, # Corresponding author)
+- `TSE` Renyi Zhong, Yintong Huo, Wenwei Gu, Jinxi Kuang, Zhihan Jiang, Guangba Yu, **Yichen Li**#, David Lo, Michael R. Lyu. "[CCISolver: End-to-End Detection and Repair of Method-Level Code-Comment Inconsistency](https://arxiv.org/abs/2506.20558)". IEEE Transactions on Software Engineering (Journal-First).
 - `FSE'26` **Yichen Li**, Qiye Lin, Yun Peng, Zhihan Jiang, Jinyang Liu, Chaozheng Wang, Yintong Huo, Cuiyun Gao. "One Size Does Not Fit All: Revisiting Code Context Engineering for Repository-Level Code Generation". The ACM International Conference on the Foundations of Software Engineering, Montreal, Canada, July 2026.
 - `FSE'26` Chaozheng Wang, Zezhou Yang, Shuzheng Gao, Cuiyun Gao, Zongjie Li, **Yichen Li**, Ting Peng, Hailiang Huang, Yuetang Deng, Michael R. Lyu. "Cascaded Code Editing: Large-Small Model Collaboration for Effective and Efficient Code Editing". The ACM International Conference on the Foundations of Software Engineering,
   Montreal, Canada, July 2026.
