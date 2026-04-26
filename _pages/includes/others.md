@@ -25,6 +25,7 @@
   - 2025: ISSRE'25, EUROSYS'26 (Shadow PC), APSEC'25, FORGE'26, MSR'25 (Junior PC)
   - 2024: ISSRE'24 (Fast Abstract Track)
 - Review Committee:
+  - 2026: TOSEM
   - 2025: TOSEM
 - Reviewer:
   - TOSEM, TSE, CSUR, TIFS, IoTJ, TR, EMSE
