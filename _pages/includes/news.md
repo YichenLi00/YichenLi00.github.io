@@ -1,4 +1,6 @@
 # 🔥 News
+- [04/2026] 🎉 Two papers accepted by **FSE26**.
+- [01/2026] 🎉 Our *Aegis* has been accepted by **EuroSys26**.
 - [09/2025] 🎉 Our *LogImprover*, *ErrorPrism*, *LogPilot* have been accepted by **ASE25**.
 - [07/2025] 🎉 Passed my thesis defense!
 - [05/2025] 🎉 Our *COFFE* has won the <span style="color:red">**ACM SIGSOFT Distinguished Paper Award**</span>
