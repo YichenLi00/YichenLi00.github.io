@@ -1,4 +1,5 @@
 # 🔥 News
+- [04/2026] 🎉 We released [Hy3-preview](https://hy.tencent.com/research/hy3). Check out the agentic coding capability contributed by our group.
 - [04/2026] 🎉 Two papers accepted by **FSE26**.
 - [01/2026] 🎉 Our *Aegis* has been accepted by **EuroSys26**.
 - [09/2025] 🎉 Our *LogImprover*, *ErrorPrism*, *LogPilot* have been accepted by **ASE25**.
