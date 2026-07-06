@@ -1,5 +1,7 @@
 # 📝 Selected Publications 
 (* Equal contribution, # Corresponding author)
+- `ASE'26 Tool` Junsong Pu, **Yichen Li**, Zhuangbin Chen. "TypeScript Repository Indexing for Code Agent Retrieval". The IEEE/ACM International Conference on Automated Software Engineering (Tool Demonstration Track), 2026.
+- `TOSEM` Yulun Wu, Guangba Yu, Zhihan Jiang, **Yichen Li**, Michael R. Lyu. "AutoScope: Code Knowledge Enhanced Span-level Sampling for Distributed Tracing". ACM Transactions on Software Engineering and Methodology.
 - `ACL'26 Findings` Meifang Chen, Zhe Yang, Huang Nianchen, Yizhan Huang, **Yichen Li**, Zihan Li, Michael R. Lyu. "[Understanding Secret Leakage Risks in Code LLMs: A Tokenization Perspective](https://arxiv.org/abs/2604.17814)".
   Findings of the Association for Computational Linguistics, San Diego, California, USA, July 2026.
 - `TSE` Renyi Zhong, Yintong Huo, Wenwei Gu, Jinxi Kuang, Zhihan Jiang, Guangba Yu, **Yichen Li**#, David Lo, Michael R. Lyu. "[CCISolver: End-to-End Detection and Repair of Method-Level Code-Comment Inconsistency](https://arxiv.org/abs/2506.20558)". IEEE Transactions on Software Engineering (Journal-First).
