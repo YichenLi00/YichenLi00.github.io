@@ -1,4 +1,5 @@
 # 🔥 News
+- [07/2026] 🎉 **[Hy3](https://huggingface.co/tencent/Hy3)** is officially released!
 - [04/2026] 🎉 We released [Hy3-preview](https://hy.tencent.com/research/hy3). Check out the agentic coding capability contributed by our group.
 - [04/2026] 🎉 Two papers accepted by **FSE26**.
 - [01/2026] 🎉 Our *Aegis* has been accepted by **EuroSys26**.
