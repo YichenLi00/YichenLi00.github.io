@@ -1,5 +1,6 @@
 # 📝 Selected Publications 
 (* Equal contribution, # Corresponding author)
+- `ASE'26` Junsong Pu, **Yichen Li**#, Zhuangbin Chen#. "[AutoSQL: Extracting SQL Templates from Imperative ORM Code in Large-Scale Repositories](https://zbchern.github.io/papers/ase26c.pdf)". The IEEE/ACM International Conference on Automated Software Engineering, 2026.
 - `ASE'26 Tool` Junsong Pu, **Yichen Li**, Zhuangbin Chen. "TypeScript Repository Indexing for Code Agent Retrieval". The IEEE/ACM International Conference on Automated Software Engineering (Tool Demonstration Track), 2026.
 - `TOSEM` Yulun Wu, Guangba Yu, Zhihan Jiang, **Yichen Li**, Michael R. Lyu. "AutoScope: Code Knowledge Enhanced Span-level Sampling for Distributed Tracing". ACM Transactions on Software Engineering and Methodology, 2026.
 - `ACL'26 Findings` Meifang Chen, Zhe Yang, Huang Nianchen, Yizhan Huang, **Yichen Li**, Zihan Li, Michael R. Lyu. "[Understanding Secret Leakage Risks in Code LLMs: A Tokenization Perspective](https://arxiv.org/abs/2604.17814)".
