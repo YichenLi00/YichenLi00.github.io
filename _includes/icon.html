@@ -1,0 +1,38 @@
+{%- comment -%}
+Hand-drawn Simpsons object icons. Usage: {% include icon.html name="donut" %}
+Optional px="34" (defaults to 22).
+
+Every attribute value is quoted. Unquoted SVG attributes (fill=#FEBE34) fail to
+parse and the shape collapses to a flat coloured blob — verified by rendering.
+
+Colours match the palette sampled from the official character art, so these sit
+next to the footer image without clashing.
+{%- endcomment -%}
+{%- comment -%}
+  The parameter is `px`, NOT `size`: `include.size` resolves to Liquid's builtin
+  size property on the include's parameter hash — i.e. the NUMBER OF PARAMETERS
+  passed — so it silently yields 1 or 2 and the SVG renders a couple of pixels
+  wide. Verified with a minimal build.
+{%- endcomment -%}
+{%- assign s = include.px | default: 22 -%}
+{%- case include.name -%}
+
+{%- when "blackboard" -%}
+<svg width="{{ s }}" height="{{ s }}" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="3" y="7" width="34" height="23" rx="2" fill="#2F6B2A" stroke="#1A1A1A" stroke-width="2.2"/><path d="M9 14h13M9 19.5h17M9 25h9" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/><path d="M11 30v4M29 30v4" stroke="#1A1A1A" stroke-width="2.2"/></svg>
+
+{%- when "donut" -%}
+<svg width="{{ s }}" height="{{ s }}" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="17" fill="#FEBE34" stroke="#1A1A1A" stroke-width="2.2"/><path d="M20 3a17 17 0 0 0-17 17c0 1 .1 2 .3 3 1.8 2.4 3.6.2 5-1.2 1.6-1.5 3.4.6 5 1.6 1.7 1 3.4-1 5-2 1.7-1 3.5.8 5.2 1.6 1.6.8 3.3-1.2 4.8-2.4 1.2-1 2.4.6 3.4 1.8.2-.9.3-1.6.3-2.4A17 17 0 0 0 20 3z" fill="#FE4DD1"/><circle cx="20" cy="20" r="6.2" fill="#ffffff" stroke="#1A1A1A" stroke-width="2.2"/><circle cx="13" cy="11.5" r="1.5" fill="#ffffff"/><circle cx="26.5" cy="12" r="1.5" fill="#62A643"/><circle cx="20" cy="7.6" r="1.5" fill="#70D1FE"/></svg>
+
+{%- when "suitcase" -%}
+<svg width="{{ s }}" height="{{ s }}" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="4" y="11" width="32" height="21" rx="3" fill="#70D1FE" stroke="#1A1A1A" stroke-width="2.2"/><path d="M4 18h32" stroke="#1A1A1A" stroke-width="2.2"/><rect x="15" y="5.5" width="10" height="5.5" rx="1.5" fill="#C42126" stroke="#1A1A1A" stroke-width="2.2"/></svg>
+
+{%- when "star" -%}
+<svg width="{{ s }}" height="{{ s }}" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M20 4l4.5 9.7 10.5 1.5-7.5 7.4 1.8 10.9L20 28.3l-9.3 5.2 1.8-10.9L5 15.2l10.5-1.5z" fill="#FED90F" stroke="#1A1A1A" stroke-width="2.3" stroke-linejoin="round"/></svg>
+
+{%- when "globe" -%}
+<svg width="{{ s }}" height="{{ s }}" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="16" fill="#62A643" stroke="#1A1A1A" stroke-width="2.2"/><ellipse cx="20" cy="20" rx="7" ry="16" fill="none" stroke="#1A1A1A" stroke-width="1.8"/><path d="M4 20h32" stroke="#1A1A1A" stroke-width="1.8"/></svg>
+
+{%- when "envelope" -%}
+<svg width="{{ s }}" height="{{ s }}" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="3" y="9" width="34" height="22" rx="2.5" fill="#FED90F" stroke="#1A1A1A" stroke-width="2.2"/><path d="M4.5 11l15.5 11.5L35.5 11" fill="none" stroke="#1A1A1A" stroke-width="2.2" stroke-linejoin="round"/></svg>
+
+{%- endcase -%}

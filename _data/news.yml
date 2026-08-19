@@ -1,0 +1,46 @@
+# News, newest first.
+#
+# date   display string, shown in the left column
+# body   one line of text. Inline markdown is allowed (the template runs
+#        markdownify), which keeps *project names* and links readable here.
+#        Wrap just the award name in <span class="is-award"> when announcing
+#        one — colouring the whole sentence reads as an error.
+
+- date: "07/2026"
+  body: "**[Hy3](https://huggingface.co/tencent/Hy3)** is officially released!"
+
+- date: "04/2026"
+  body: "We released [Hy3-preview](https://hy.tencent.com/research/hy3). Check out the agentic coding capability contributed by our group."
+
+- date: "04/2026"
+  body: "Two papers accepted by **FSE26**."
+
+- date: "01/2026"
+  body: "Our *Aegis* has been accepted by **EuroSys26**."
+
+- date: "09/2025"
+  body: "Our *LogImprover*, *ErrorPrism*, *LogPilot* have been accepted by **ASE25**."
+
+- date: "07/2025"
+  body: "Passed my thesis defense!"
+
+- date: "05/2025"
+  body: "Our *COFFE* has won the <span class=\"is-award\">ACM SIGSOFT Distinguished Paper Award</span>"
+
+- date: "01/2025"
+  body: "Our *COCA* has been accepted by **ICSE25**."
+
+- date: "05/2024"
+  body: "I will join the [Microsoft Azure Systems Research group](https://www.microsoft.com/en-us/research/group/azure-research-systems/overview/) as a research intern this summer. Meet me @Redmond!"
+
+- date: "04/2024"
+  body: "Check the first & most large-scale empirical study *LogBench* about \"LLMs for logging\" — [Paper](https://arxiv.org/abs/2307.05950), [LogBench](https://github.com/YichenLi00/LoggingStudy)."
+
+- date: "01/2024"
+  body: "Our *SCLogger* and *LILAC* have been accepted without revision by **FSE24** (56/483)."
+
+- date: "01/2024"
+  body: "Our *IDECoder* has been accepted by **ICSE-LLM4Code**."
+
+- date: "08/2023"
+  body: "Our *AutoLog* has been accepted by **ASE23** (134/629)."

@@ -1,0 +1,132 @@
+---
+layout: base
+permalink: /
+redirect_from:
+  - /about/
+  - /about.html
+---
+
+{%- comment -%}
+  Anchor aliases keep old inbound links working: kramdown used to derive section
+  ids from the emoji headings, so /#-news, /#-honors-and-awards and friends are
+  in the wild. They are zero-height spans, so they cost no layout.
+{%- endcomment -%}
+
+<section class="hero">
+  <span class="anchor-alias" id="about-me"></span>
+  <div class="hero-grid">
+    <div class="hero-text">
+      <h1 class="hero-name">{{ site.author.name }}</h1>
+      <div class="hero-role">Research Scientist @ Tencent Hunyuan</div>
+
+      <div class="hero-bio">
+        <p>I am a research scientist in the Tencent Hunyuan agentic (coding) team. Before
+        that, I received my Ph.D. at <a href="https://www.cuhk.edu.hk">The Chinese
+        University of Hong Kong</a>, under the supervision of
+        <a href="https://www.cse.cuhk.edu.hk/lyu/">Prof. Michael R. Lyu</a>. Previously, I
+        received my Bachelor's degree in Information Security from Huazhong University of
+        Science and Technology in 2021.</p>
+
+        <p>I am dedicated to improving the agentic coding capability of next-generation
+        <strong>Foundation Models</strong>.</p>
+      </div>
+
+      <div class="social">
+        <a href="mailto:{{ site.author.email }}">Email</a>
+        <a href="{{ site.author.googlescholar }}">Google Scholar</a>
+        <a href="https://github.com/{{ site.author.github }}">GitHub</a>
+        <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="hero-side">
+      <div class="avatar">
+        <img src="{{ '/images/avatar.jpg' | relative_url }}"
+             alt="{{ site.author.name }}" width="560" height="560">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="news">
+  <span class="anchor-alias" id="-news"></span>
+  <h2 class="sec-title">{% include icon.html name="blackboard" %} News</h2>
+  <ul class="news">
+    {%- for item in site.data.news %}
+    <li>
+      <time>{{ item.date }}</time>
+      <span>{{ item.body | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section class="sec" id="vitae">
+  <span class="anchor-alias" id="-educations"></span>
+  <span class="anchor-alias" id="-experiences"></span>
+  <h2 class="sec-title">{% include icon.html name="suitcase" %} Vitæ</h2>
+  <div class="tl">
+    {%- for row in site.data.vitae %}
+    <div class="tl-item{% if row.current %} is-current{% endif %}">
+      <div class="tl-org">
+        {{ row.org }}
+        <span class="tl-when">{{ row.when }}</span>
+      </div>
+      <div class="tl-role">
+        {{ row.role }}
+        {%- if row.location %} <span class="tl-loc">· {{ row.location }}</span>{% endif %}
+      </div>
+      {%- if row.concurrent %}
+      <ul class="tl-nested">
+        {%- for c in row.concurrent %}
+        <li><strong>{{ c.org }}</strong> · {{ c.role }} · {{ c.when }}{% if c.location %} · {{ c.location }}{% endif %}</li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="sec" id="honors">
+  <span class="anchor-alias" id="-honors-and-awards"></span>
+  <h2 class="sec-title">{% include icon.html name="star" %} Honors &amp; Awards</h2>
+  <ul class="honors">
+    {%- for h in site.data.honors %}
+    <li><span>{{ h.title }}{% if h.year %} <span class="year">{{ h.year }}</span>{% endif %}</span></li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section class="sec" id="services">
+  <span class="anchor-alias" id="-services"></span>
+  <h2 class="sec-title">{% include icon.html name="globe" %} Services</h2>
+  <div class="services">
+    {%- for g in site.data.services %}
+    <div class="svc-row">
+      <div class="svc-label">{{ g.group }}</div>
+      <ul class="svc-items">
+        {%- for it in g.items %}
+        <li>{{ it }}</li>
+        {%- endfor %}
+      </ul>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+{%- comment -%}
+  Publications used to live on this page, so /#-selected-publications and
+  /#-publications are in the wild. A URL fragment never reaches the server, so
+  jekyll-redirect-from cannot help — it only redirects paths. Hence a few lines
+  of JS. With scripting off the visitor simply stays here, where the nav still
+  offers Publications, so nothing is actually broken.
+{%- endcomment -%}
+<script>
+  (function () {
+    var moved = ['#-publications', '#-selected-publications'];
+    if (moved.indexOf(location.hash) !== -1) {
+      location.replace('{{ '/publications/' | relative_url }}');
+    }
+  })();
+</script>

@@ -1,102 +1,38 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
-
-# Site Settings
+# Site
 title                    : "Yichen Li"
 description              : "Research Scientist Hunyuan@Tencent"
+url                      : "https://yichenli00.github.io"
+baseurl                  : ""
 repository               : "YichenLi00/YichenLi00.github.io"
-google_scholar_stats_use_cdn : true
 
-# google analytics
-google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
+# Verification
+google_site_verification : "_2SVGL-Itsj0nzXH9JLcpvTzXZaZNeuKeGkHySIIIEg"
 
-# SEO Related
-google_site_verification :  "_2SVGL-Itsj0nzXH9JLcpvTzXZaZNeuKeGkHySIIIEg"
-bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
-baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
-
-# Site Author
+# Author. Only the fields the templates actually read.
 author:
-  name             : "Yichen Li"
-  avatar           : "images/android-chrome-512x512.png"
-  bio              : "Enjoy the journey!"
-  location         : "ShaTin, Hong Kong"
-  employer         :
-  pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=ckycnWkAAAAJ"
-  email            : "ycli21@cse.cuhk.edu.hk"
-  researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
-  github           : "YichenLi00"
-  google_plus      :
-  keybase          :
-  instagram        :
-  impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
-  lastfm           :
-  linkedin         : "yichen-li-9395101a0"
-  dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : # e.g., "https://orcid.org/xxxx"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
-  tumblr           :
-  twitter          : 
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
-  wikipedia        :
+  name          : "Yichen Li"
+  email         : "ycli21@cse.cuhk.edu.hk"
+  location      : "ShaTin, Hong Kong"
+  googlescholar : "https://scholar.google.com/citations?user=ckycnWkAAAAJ"
+  github        : "YichenLi00"
+  linkedin      : "yichen-li-9395101a0"
 
-
-# Reading Files
+# Reading files
 include:
-  - .htaccess
   - _pages
-  - files
 exclude:
-  - docs
-  - google_scholar_crawler
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
   - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - .github
-  - CHANGELOG
-  - Capfile
+  - .jekyll-cache
   - Gemfile
-  - Gruntfile.js
+  - Gemfile.lock
   - LICENSE
-  - README
-  - Rakefile
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
-  - config
-  - gulpfile.js
-  - log
-  - node_modules
-  - package.json
-  - tmp
+  - README.md
+  - google_scholar_crawler
   - vendor
 keep_files:
   - .git
-  - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
 
 # Conversion
 markdown: kramdown
@@ -105,8 +41,6 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-
-# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
@@ -119,45 +53,29 @@ kramdown:
 
 # Defaults
 defaults:
-  # _pages
   - scope:
       path: ""
       type: pages
     values:
-      layout: default
-      author_profile: true
+      layout: base
 
-
-# Sass/SCSS
+# Sass
 sass:
   sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
+  style: compressed
 
 # Outputting
-permalink: /:categories/:title/
-timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+permalink: /:title/
+timezone: Asia/Shanghai
 
-
-# Plugins
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
-# mimic GitHub Pages with --safe
+
+# Mirrors GitHub Pages' own allowlist for local --safe builds.
 whitelist:
-  - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
+  - jekyll-redirect-from
   - jemoji
-
-
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development

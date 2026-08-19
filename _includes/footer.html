@@ -1,0 +1,11 @@
+<footer class="site-footer">
+  <div class="footer-text">
+    <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+    <span class="dim">·</span>
+    <span class="dim">{{ site.author.location }}</span><br>
+    <span class="dim">&copy; {{ site.time | date: "%Y" }} {{ site.author.name }}</span>
+  </div>
+  <img class="footer-homer"
+       src="{{ '/images/homer-donut.png' | relative_url }}"
+       alt="" width="190" height="390" loading="lazy">
+</footer>

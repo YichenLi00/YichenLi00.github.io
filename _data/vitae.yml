@@ -1,0 +1,44 @@
+# Education and work, newest first, as one timeline.
+#
+# Internships are nested under the degree they ran during rather than listed
+# as siblings — four of them overlap the Ph.D., and one (MSRA 2020.11) ran
+# during undergrad, so a flat chronological list would misrepresent them.
+#
+# current  marks the node rendered with a filled dot
+
+- org: "Tencent Hunyuan"
+  when: "2025.11 — Present"   # TODO 起始月份是我按博士毕业时间推的,请核对
+  role: "Research Scientist, agentic coding"
+  location: "Shenzhen, China"
+  kind: work
+  current: true
+
+- org: "The Chinese University of Hong Kong"
+  when: "2021.08 — 2025.10"
+  role: "Ph.D., advised by Prof. Michael R. Lyu"
+  location: "Hong Kong"
+  kind: education
+  concurrent:
+    - org: "ByteBrain @ ByteDance"
+      role: "Research Intern"
+      when: "2024.11 — 2025.10"
+      location: "China"
+    - org: "Azure Systems Research @ Microsoft Research"
+      role: "Research Intern"
+      when: "2024.06 — 2024.09"
+      location: "Redmond, US"
+    - org: "DKI @ Microsoft Research Asia"
+      role: "Research Intern"
+      when: "2022.04 — 2022.07"
+      location: "China"
+
+- org: "Huazhong University of Science and Technology"
+  when: "2017.09 — 2021.06"
+  role: "B.Eng., Information Security"
+  location: "Wuhan, China"
+  kind: education
+  concurrent:
+    - org: "DKI @ Microsoft Research Asia"
+      role: "Research Intern"
+      when: "2020.11 — 2021.06"
+      location: "China"

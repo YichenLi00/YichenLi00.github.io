@@ -1,0 +1,35 @@
+---
+layout: base
+permalink: /contact/
+title: "Contact"
+description: "Get in touch about research on agentic coding, logging, or cloud reliability."
+---
+
+<div class="page-head">
+  <h1 class="page-title">{% include icon.html name="envelope" px="34" %} Contact</h1>
+  <p class="page-lede">Feel free to drop me an email if you are interested in my research,
+  or just want to talk.</p>
+</div>
+
+<div class="contact-grid">
+  <div class="contact-row">
+    <div class="contact-label">Email</div>
+    <div class="contact-val">
+      <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+    </div>
+  </div>
+
+  <div class="contact-row">
+    <div class="contact-label">Based in</div>
+    <div class="contact-val">{{ site.author.location }}</div>
+  </div>
+
+  <div class="contact-row">
+    <div class="contact-label">Elsewhere</div>
+    <div class="contact-val">
+      <a href="{{ site.author.googlescholar }}">Google Scholar</a> ·
+      <a href="https://github.com/{{ site.author.github }}">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>
+    </div>
+  </div>
+</div>

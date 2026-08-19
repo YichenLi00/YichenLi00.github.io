@@ -1,0 +1,20 @@
+<div class="nav-outer">
+  <nav class="nav" aria-label="Main">
+    <ul>
+      {%- for link in site.data.navigation.main -%}
+        {%- comment -%}
+          Exact match for "/" so About isn't active on every page; prefix match
+          for the others so /publications/ highlights Publications.
+        {%- endcomment -%}
+        {%- if link.match == "/" -%}
+          {%- if page.url == "/" -%}{%- assign on = true -%}{%- else -%}{%- assign on = false -%}{%- endif -%}
+        {%- else -%}
+          {%- if page.url contains link.match -%}{%- assign on = true -%}{%- else -%}{%- assign on = false -%}{%- endif -%}
+        {%- endif -%}
+        <li{% if on %} class="is-active"{% endif %}>
+          <a href="{{ link.url | relative_url }}"{% if on %} aria-current="page"{% endif %}>{{ link.title }}</a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </nav>
+</div>

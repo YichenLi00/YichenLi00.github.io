@@ -1,22 +1,14 @@
-# main links links
+# Top nav. Three pages; `match` is the page.url prefix that marks the item
+# active, so /publications/ highlights Publications.
 main:
   - title: "About"
-    url: "/#about-me"
-
-  - title: "News"
-    url: "/#-news"
+    url: "/"
+    match: "/"
 
   - title: "Publications"
-    url: "/#-publications"
+    url: "/publications/"
+    match: "/publications"
 
-  - title: "Honors and Awards"
-    url: "/#-honors-and-awards"
-
-  - title: "Educations"
-    url: "/#-educations"
-
-  - title: "Experiences"
-    url: "/#-experiences"
-
-  - title: "Services"
-    url: "/#-services"
+  - title: "Contact"
+    url: "/contact/"
+    match: "/contact"

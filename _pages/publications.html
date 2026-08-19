@@ -1,0 +1,100 @@
+---
+layout: base
+permalink: /publications/
+title: "Publications"
+description: "Peer-reviewed research on agentic coding, logging, and the reliability of large-scale cloud systems."
+---
+
+{%- comment -%}
+  Grouping by year without jekyll-group-by-array (not on the GitHub Pages
+  allowlist): sort descending once, then emit a year heading whenever the year
+  changes as we walk the list.
+
+  Entries with no year yet (Journal-First papers whose prose carries no date)
+  sort to the end and land under "Journal-First".
+
+  A year heading is marked is-extra-only when that year contains no selected
+  papers, so the Selected view can hide the heading along with its contents.
+{%- endcomment -%}
+
+{%- assign pubs = site.data.publications | sort: "year" | reverse -%}
+{%- assign total = site.data.publications | size -%}
+
+<div class="page-head">
+  <h1 class="page-title">{% include icon.html name="donut" px="34" %} Publications</h1>
+  <p class="page-lede">{{ page.description }}</p>
+  <p class="page-note">* Equal contribution &nbsp;·&nbsp; # Corresponding author</p>
+</div>
+
+<div class="pub-scope">
+  <input type="radio" name="pub-view" id="pub-selected" checked>
+  <input type="radio" name="pub-view" id="pub-all">
+
+  <div class="seg-wrap">
+    <div class="seg" role="group" aria-label="Filter publications">
+      <label for="pub-selected">Selected</label>
+      <label for="pub-all">All {{ total }}</label>
+    </div>
+  </div>
+
+  <div class="pub-list">
+    {%- assign shown_year = "__none__" -%}
+    {%- for p in pubs -%}
+
+      {%- if p.year -%}{%- assign this_year = p.year | append: "" -%}
+      {%- else -%}{%- assign this_year = "Journal-First" -%}{%- endif -%}
+
+      {%- if this_year != shown_year -%}
+        {%- assign shown_year = this_year -%}
+        {%- comment -%} does this year hold any selected paper? {%- endcomment -%}
+        {%- assign year_has_selected = false -%}
+        {%- for q in pubs -%}
+          {%- if q.year -%}{%- assign qy = q.year | append: "" -%}
+          {%- else -%}{%- assign qy = "Journal-First" -%}{%- endif -%}
+          {%- if qy == this_year and q.selected -%}{%- assign year_has_selected = true -%}{%- endif -%}
+        {%- endfor %}
+    <div class="pub-year{% unless year_has_selected %} is-extra-only{% endunless %}">
+      <b>{{ this_year }}</b><i></i>
+    </div>
+      {%- endif %}
+
+    <div class="pub{% unless p.selected %} is-extra{% endunless %}">
+      <span class="pub-tag">{{ p.venue }}</span>
+      <div>
+        <div class="pub-title">
+          {%- assign paper = nil -%}
+          {%- for l in p.links -%}
+            {%- if l.label == "Paper" and paper == nil -%}{%- assign paper = l.url -%}{%- endif -%}
+          {%- endfor -%}
+          {%- if paper -%}<a href="{{ paper }}">{{ p.title }}</a>{%- else -%}{{ p.title }}{%- endif -%}
+        </div>
+
+        <div class="pub-authors">
+          {%- assign names = p.authors | split: ", " -%}
+          {%- for n in names -%}
+            {%- if n == site.author.name -%}<span class="me">{{ n }}</span>{%- else -%}{{ n }}{%- endif -%}
+            {%- if p.equal contains n %}<sup>*</sup>{% endif -%}
+            {%- if p.corresponding contains n %}<sup>#</sup>{% endif -%}
+            {%- unless forloop.last %}, {% endunless -%}
+          {%- endfor -%}
+        </div>
+
+        <div class="pub-where">{{ p.where }}</div>
+
+        {%- if p.award %}
+        <div class="pub-award">🏆 {{ p.award }}</div>
+        {%- endif %}
+
+        {%- if p.links %}
+        <div class="pub-links">
+          {%- for l in p.links %}
+          <a href="{{ l.url }}">{{ l.label }}</a>
+          {%- endfor %}
+        </div>
+        {%- endif %}
+      </div>
+    </div>
+
+    {%- endfor %}
+  </div>
+</div>

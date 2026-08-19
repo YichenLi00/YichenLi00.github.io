@@ -1,0 +1,24 @@
+# Academic service. Each group renders as a labelled row; `items` is a flat
+# list so long reviewer lists wrap instead of forming a nested bullet tree.
+
+- group: "Program Committee"
+  items:
+    - "2026: ISSRE'26 (Industry Track), AIWare'26 (Dataset Track)"
+    - "2025: ISSRE'25, EuroSys'26 (Shadow PC), APSEC'25, FORGE'26, MSR'25 (Junior PC)"
+    - "2024: ISSRE'24 (Fast Abstract Track)"
+
+- group: "Review Committee"
+  items:
+    - "TOSEM (2025, 2026)"
+
+- group: "Reviewer"
+  items:
+    - "TOSEM, TSE, CSUR, TIFS, IoTJ, TR, EMSE"
+
+- group: "Sub-Reviewer"
+  items:
+    - "2025: ATC"
+    - "2024: FSE, ISSTA, ISSRE"
+    - "2023: DSN, FSE, ISSRE, ICPE"
+    - "2022: FSE, ISSRE"
+    - "2021: DSN, ICSE"

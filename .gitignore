@@ -1,0 +1,13 @@
+# Jekyll build output — GitHub Pages builds this itself.
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Local bundler state. The system Ruby here is 2.6, which resolves an older
+# dependency set than GitHub Pages uses, so neither of these should be shared.
+.bundle/
+vendor/
+
+# macOS
+.DS_Store
