@@ -1,14 +1,12 @@
 {%- comment -%}
 Institution mark for the Vitæ timeline.
 
-  {% include logo.html logo=row.logo mark=row.mark color=row.color %}
+  {% include logo.html logo=row.logo %}
 
-Uses the real logo when a clean square version exists. ByteDance and HUST only
-publish wide wordmarks, which turn to mush at 24px, so they fall back to a
-lettered tile in the brand colour.
+All of them are the real thing now (see images/logos/). Note the wide official
+wordmarks are unusable here — at 24px the lettering turns to grey mush — so each
+file is a square icon-only version.
 {%- endcomment -%}
 {%- if include.logo -%}
 <span class="tl-logo"><img src="{{ '/images/logos/' | append: include.logo | relative_url }}" alt="" width="24" height="24" loading="lazy"></span>
-{%- elsif include.mark -%}
-<span class="tl-logo tl-logo-mark" style="background: {{ include.color | default: '#5B5B63' }}">{{ include.mark }}</span>
 {%- endif -%}

@@ -5,7 +5,8 @@
 # internships overlap the Ph.D. and one ran during undergrad, so a flat
 # chronological list would misrepresent them.
 #
-# logo     file under images/logos/
+# logo     square icon under images/logos/ — all real marks
+# url      optional; makes the entry name a link
 # current  renders the node with a filled dot
 
 - org: "Tencent Hunyuan"
@@ -16,17 +17,17 @@
   kind: work
   current: true
   concurrent:
-    # The full Hunyuan logo is used once, above; releases carry the short Hy
-    # mark so the repeats don't read as clutter.
+    # Hy3 has no icon of its own — the roundel in its wordmark is the Hunyuan
+    # mark, so the releases reuse that.
     - org: "Hy3"
       role: "Released"
       when: "2026.07"
-      logo: "hy.svg"
+      logo: "tencent-hunyuan.svg"
       url: "https://huggingface.co/tencent/Hy3"
     - org: "Hy3-preview"
       role: "Released — agentic coding contributed by our group"
       when: "2026.04"
-      logo: "hy.svg"
+      logo: "tencent-hunyuan.svg"
       url: "https://hy.tencent.com/research/hy3"
 
 - org: "The Chinese University of Hong Kong"

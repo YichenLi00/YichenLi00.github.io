@@ -341,17 +341,6 @@ ul, ol { list-style: none; }
 .tl-flag.is-sub .tl-logo { width: 19px; height: 19px; }
 .tl-flag.is-sub .tl-logo img { max-width: 19px; max-height: 19px; }
 
-/* Lettered fallback where no square logo exists. */
-.tl-logo-mark {
-  border-radius: 5px;
-  color: #fff;
-  font-family: var(--f-head);
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1;
-}
-.tl-flag.is-sub .tl-logo-mark { font-size: 11px; }
-
 .tl-when {
   font-family: var(--f-head);
   font-size: 12.5px;

@@ -60,7 +60,7 @@ redirect_from:
     <div class="tl-item{% if row.current %} is-current{% endif %}">
       <div class="tl-head">
         <span class="tl-flag">
-          {%- include logo.html logo=row.logo mark=row.mark color=row.color -%}
+          {%- include logo.html logo=row.logo -%}
           <span class="tl-org">{{ row.org }}</span>
         </span>
         <span class="tl-when">{{ row.when }}</span>
@@ -75,7 +75,7 @@ redirect_from:
         <li>
           <span class="tl-head">
             <span class="tl-flag is-sub">
-              {%- include logo.html logo=c.logo mark=c.mark color=c.color -%}
+              {%- include logo.html logo=c.logo -%}
               <span class="tl-org">{% if c.url %}<a href="{{ c.url }}">{{ c.org }}</a>{% else %}{{ c.org }}{% endif %}</span>
             </span>
             <span class="tl-when">{{ c.when }}</span>
