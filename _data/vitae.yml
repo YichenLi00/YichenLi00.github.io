@@ -10,8 +10,8 @@
 # current  renders the node with a filled dot
 
 - org: "Tencent Hunyuan"
-  when: "2025.11 — Present"   # TODO 起始月份是我按博士毕业时间推的,请核对
-  role: "Research Scientist, agentic coding"
+  when: "2026.03 — Present"
+  role: "Research Scientist, agentic training"
   location: "Shenzhen, China"
   logo: "tencent-hunyuan.svg"
   kind: work
@@ -25,7 +25,7 @@
       logo: "tencent-hunyuan.svg"
       url: "https://huggingface.co/tencent/Hy3"
     - org: "Hy3-preview"
-      role: "Released — agentic coding contributed by our group"
+      role: "Released — agentic training contributed by our group"
       when: "2026.04"
       logo: "tencent-hunyuan.svg"
       url: "https://hy.tencent.com/research/hy3"
