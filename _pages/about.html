@@ -43,33 +43,26 @@ redirect_from:
       <div class="avatar">
         <img src="{{ '/images/avatar.jpg' | relative_url }}"
              alt="{{ site.author.name }}" width="560" height="560">
+        <img class="hero-bart" src="{{ '/images/bart.png' | relative_url }}"
+             alt="" width="90" height="222" loading="lazy">
       </div>
     </div>
   </div>
 </section>
 
-<section class="sec" id="news">
-  <span class="anchor-alias" id="-news"></span>
-  <h2 class="sec-title">{% include icon.html name="blackboard" %} News</h2>
-  <ul class="news">
-    {%- for item in site.data.news %}
-    <li>
-      <time>{{ item.date }}</time>
-      <span>{{ item.body | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
-    </li>
-    {%- endfor %}
-  </ul>
-</section>
-
 <section class="sec" id="vitae">
+  <span class="anchor-alias" id="-news"></span>
   <span class="anchor-alias" id="-educations"></span>
   <span class="anchor-alias" id="-experiences"></span>
-  <h2 class="sec-title">{% include icon.html name="suitcase" %} Vitæ</h2>
+  <h2 class="sec-title">{% include icon.html name="suitcase" %} <span>Vitæ</span></h2>
   <div class="tl">
     {%- for row in site.data.vitae %}
     <div class="tl-item{% if row.current %} is-current{% endif %}">
-      <div class="tl-org">
-        {{ row.org }}
+      <div class="tl-head">
+        <span class="tl-flag">
+          {%- include logo.html logo=row.logo mark=row.mark color=row.color -%}
+          <span class="tl-org">{{ row.org }}</span>
+        </span>
         <span class="tl-when">{{ row.when }}</span>
       </div>
       <div class="tl-role">
@@ -79,7 +72,16 @@ redirect_from:
       {%- if row.concurrent %}
       <ul class="tl-nested">
         {%- for c in row.concurrent %}
-        <li><strong>{{ c.org }}</strong> · {{ c.role }} · {{ c.when }}{% if c.location %} · {{ c.location }}{% endif %}</li>
+        <li>
+          <span class="tl-head">
+            <span class="tl-flag is-sub">
+              {%- include logo.html logo=c.logo mark=c.mark color=c.color -%}
+              <span class="tl-org">{% if c.url %}<a href="{{ c.url }}">{{ c.org }}</a>{% else %}{{ c.org }}{% endif %}</span>
+            </span>
+            <span class="tl-when">{{ c.when }}</span>
+          </span>
+          <span class="tl-role">{{ c.role }}{% if c.location %} <span class="tl-loc">· {{ c.location }}</span>{% endif %}</span>
+        </li>
         {%- endfor %}
       </ul>
       {%- endif %}
@@ -90,7 +92,7 @@ redirect_from:
 
 <section class="sec" id="honors">
   <span class="anchor-alias" id="-honors-and-awards"></span>
-  <h2 class="sec-title">{% include icon.html name="star" %} Honors &amp; Awards</h2>
+  <h2 class="sec-title">{% include icon.html name="star" %} <span>Honors &amp; Awards</span></h2>
   <ul class="honors">
     {%- for h in site.data.honors %}
     <li><span>{{ h.title }}{% if h.year %} <span class="year">{{ h.year }}</span>{% endif %}</span></li>
@@ -100,7 +102,7 @@ redirect_from:
 
 <section class="sec" id="services">
   <span class="anchor-alias" id="-services"></span>
-  <h2 class="sec-title">{% include icon.html name="globe" %} Services</h2>
+  <h2 class="sec-title">{% include icon.html name="globe" %} <span>Services</span></h2>
   <div class="services">
     {%- for g in site.data.services %}
     <div class="svc-row">

@@ -136,7 +136,6 @@
   title: "COCA: Generative Root Cause Analysis for Distributed Systems with Code Knowledge"
   authors: "Yichen Li, Yulun Wu, Jinyang Liu, Zhihan Jiang, Zhuangbin Chen, Guangba Yu and Michael R. Lyu"
   where: "The IEEE/ACM International Conference on Software Engineering, Ottawa, Ontario, Canada"
-  award: "ACM SIGSOFT Distinguished Paper Award"
   selected: true
   links:
     - { label: "Paper", url: "https://arxiv.org/abs/2503.23051" }
@@ -228,7 +227,7 @@
     - { label: "Paper", url: "https://arxiv.org/abs/2402.17583" }
 
 - venue: "FSE'24"
-  year: 2023
+  year: 2024
   title: "Your Code Secret Belongs to Me: Neural Code Completion Tools Can Memorize Hard-coded Credentials"
   authors: "Yizhan Huang, Yichen Li, Weibin Wu, Jianping Zhang and Michael R. Lyu"
   where: "The ACM International Conference on the Foundations of Software Engineering, Porto de Galinhas, Brazil"
@@ -236,8 +235,8 @@
   links:
     - { label: "Paper", url: "https://arxiv.org/pdf/2309.07639" }
     - { label: "Code", url: "https://github.com/HCR-Repo/HCR" }
-    - { label: "News", url: "https://blog.gitguardian.com/yes-github-copilot-can-leak-secrets/" }
-    - { label: "News", url: "https://www.theregister.com/2023/09/19/github_copilot_amazon_api/" }
+    - { label: "GitGuardian", url: "https://blog.gitguardian.com/yes-github-copilot-can-leak-secrets/" }
+    - { label: "The Register", url: "https://www.theregister.com/2023/09/19/github_copilot_amazon_api/" }
 
 - venue: "ASE'23"
   year: 2023

@@ -1,3 +1,18 @@
+{%- comment -%}
+  A different character per page, picked to suit the page: Homer with his donut
+  on About, Lisa (the studious one) on Publications, Maggie on the short Contact
+  page. Widths differ because the source art does — each is sized so they read
+  at roughly the same visual height.
+{%- endcomment -%}
+{%- case page.url -%}
+  {%- when "/publications/" -%}
+    {%- assign toon = "lisa.png" -%}{%- assign toon_w = 62 -%}
+  {%- when "/contact/" -%}
+    {%- assign toon = "maggie.png" -%}{%- assign toon_w = 82 -%}
+  {%- else -%}
+    {%- assign toon = "homer-donut.png" -%}{%- assign toon_w = 96 -%}
+{%- endcase -%}
+
 <footer class="site-footer">
   <div class="footer-text">
     <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
@@ -5,7 +20,7 @@
     <span class="dim">{{ site.author.location }}</span><br>
     <span class="dim">&copy; {{ site.time | date: "%Y" }} {{ site.author.name }}</span>
   </div>
-  <img class="footer-homer"
-       src="{{ '/images/homer-donut.png' | relative_url }}"
-       alt="" width="185" height="204" loading="lazy">
+  <img class="footer-toon"
+       src="{{ '/images/' | append: toon | relative_url }}"
+       alt="" style="width: {{ toon_w }}px" loading="lazy">
 </footer>

@@ -175,14 +175,27 @@ ul, ol { list-style: none; }
 }
 .hero-bio a:hover { border-bottom-color: var(--link); }
 
-.avatar { width: 268px; height: 268px; transform: rotate(3deg); }
-.avatar img {
+.avatar { position: relative; width: 268px; height: 268px; transform: rotate(3deg); }
+.avatar > img:first-child {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 24px;
   -webkit-mask-image: radial-gradient(92% 92%, #000 65%, transparent 100%);
           mask-image: radial-gradient(92% 92%, #000 65%, transparent 100%);
+}
+
+/* Bart stands beside the photo, clear of it, counter-rotated so he is upright
+   while the photo stays tilted. Hidden on narrow screens where the hero stacks
+   and there is no room beside the avatar. */
+.hero-bart {
+  position: absolute;
+  left: -76px;
+  bottom: -10px;
+  width: 66px;
+  height: auto;
+  transform: rotate(-3deg);
+  pointer-events: none;
 }
 
 .social { display: flex; flex-wrap: wrap; gap: 18px; padding-top: 26px; }
@@ -211,6 +224,23 @@ ul, ol { list-style: none; }
   padding-bottom: 18px;
 }
 .sec-title svg { flex: none; }
+
+/* Marker-pen stroke in Simpsons yellow, drawn through the lower part of the
+   text like a highlighter.
+   Note: .sec-title is a flex container, so `display: inline` on a child is
+   blockified — the span then fills the whole 37px line box and a percentage
+   background-position lands well below the glyphs. Pinning line-height to 1
+   makes the box hug the text, so the stroke sits where it should. Scoped to a
+   direct child to spare the spans inside news/honours items. */
+.sec-title > span:not(.anchor-alias),
+.page-title > span:not(.anchor-alias) {
+  line-height: 1;
+  padding: 0 3px .06em;
+  background-image: linear-gradient(var(--sim-yellow), var(--sim-yellow));
+  background-repeat: no-repeat;
+  background-size: 100% .32em;
+  background-position: 0 100%;
+}
 
 /* Aliases for the old emoji-derived anchor ids (/#-news and friends). Zero
    height so they never affect layout, but still land correctly on jump. */
@@ -283,33 +313,71 @@ ul, ol { list-style: none; }
 }
 .tl-item.is-current::before { background: var(--sim-yellow); }
 
-.tl-org {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 9px;
-  font-family: var(--f-head);
-  font-size: 15.5px;
-  font-weight: 700;
+/* Flag card + date pill, after the reference design: the organisation sits in a
+   raised tile with its logo, and the dates hang outside it. */
+.tl-head { display: flex; align-items: center; flex-wrap: wrap; gap: 11px; }
+
+.tl-flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #F8F8F8;
+  border-radius: 5px;
+  padding: 6px 11px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .15), 1px 1px 1px rgba(0, 0, 0, .15);
 }
+
+.tl-org {
+  font-family: var(--f-head);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.tl-flag.is-sub { padding: 4px 9px; }
+.tl-flag.is-sub .tl-org { font-size: 13px; }
+
+.tl-logo { flex: none; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; }
+.tl-logo img { max-width: 24px; max-height: 24px; object-fit: contain; }
+.tl-flag.is-sub .tl-logo { width: 19px; height: 19px; }
+.tl-flag.is-sub .tl-logo img { max-width: 19px; max-height: 19px; }
+
+/* Lettered fallback where no square logo exists. */
+.tl-logo-mark {
+  border-radius: 5px;
+  color: #fff;
+  font-family: var(--f-head);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+}
+.tl-flag.is-sub .tl-logo-mark { font-size: 11px; }
+
 .tl-when {
   font-family: var(--f-head);
   font-size: 12.5px;
   font-weight: 700;
   color: var(--date);
+  background: var(--tag-bg);
+  border: 1px solid var(--tag-border);
+  border-radius: 4px;
+  padding: 3px 8px;
   white-space: nowrap;
 }
-.tl-role { padding-top: 3px; font-size: 14px; color: var(--text-2); line-height: 1.55; }
+
+.tl-role { display: block; padding-top: 7px; font-size: 14px; color: var(--text-2); line-height: 1.55; }
 .tl-loc  { color: var(--muted); font-size: 12.5px; }
 
 .tl-nested {
-  margin-left: 2px;
-  padding-top: 10px;
-  padding-left: 16px;
+  margin-left: 4px;
+  padding-top: 14px;
+  padding-left: 18px;
   border-left: 2px dashed var(--rule);
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 }
-.tl-nested li { padding: 3px 0; font-size: 13.5px; color: var(--text-2); line-height: 1.55; }
-.tl-nested strong { color: var(--text); font-weight: 600; }
+.tl-nested .tl-role { padding-top: 5px; font-size: 13px; }
+.tl-nested .tl-when { font-size: 11.5px; padding: 2px 7px; }
 
 /* ==========================================================================
    Honours
@@ -533,10 +601,11 @@ ul, ol { list-style: none; }
 .footer-text a:hover { color: var(--link); }
 .footer-text .dim { color: var(--muted); }
 
-/* Head-and-shoulders crop, so it reads at this size instead of becoming a thin
-   full-body sliver. Sits slightly below the baseline to look like it is
-   standing on the footer rather than pasted into it. */
-.footer-homer { flex: none; width: 96px; margin-bottom: -22px; }
+/* A different character per page (see _includes/footer.html). Width is set
+   inline since the source art has different proportions; height follows. Sits
+   slightly below the baseline so it reads as standing on the footer rather
+   than pasted into it. */
+.footer-toon { flex: none; height: auto; margin-bottom: -22px; }
 
 /* ==========================================================================
    Narrow screens
@@ -550,6 +619,7 @@ ul, ol { list-style: none; }
   .hero-text { order: 2; flex-basis: 100%; width: 100%; margin-top: 22px; }
 
   .avatar { width: 190px; height: 190px; transform: none; }
+  .hero-bart { display: none; }   /* no room beside the avatar once stacked */
   .hero-name { font-size: 31px; }
   .hero-role { font-size: 18px; }
   .hero-bio  { width: 100%; }
@@ -574,7 +644,7 @@ ul, ol { list-style: none; }
   .contact-label { width: auto; }
 
   .site-footer { flex-direction: column-reverse; align-items: flex-start; }
-  .footer-homer { align-self: flex-end; margin-bottom: 0; }
+  .footer-toon { align-self: flex-end; margin-bottom: 0; }
 }
 
 /* ==========================================================================
@@ -582,7 +652,7 @@ ul, ol { list-style: none; }
    ========================================================================== */
 
 @media print {
-  .nav-outer, .footer-homer { display: none; }
+  .nav-outer, .footer-toon { display: none; }
   .page::before, .page::after { display: none; }
   .hero { padding-top: 0; }
   .pub.is-extra { display: flex !important; }   /* everything, regardless of toggle */

@@ -1,44 +1,66 @@
-# Education and work, newest first, as one timeline.
+# Education, work and releases, newest first, as one timeline.
 #
-# Internships are nested under the degree they ran during rather than listed
-# as siblings — four of them overlap the Ph.D., and one (MSRA 2020.11) ran
-# during undergrad, so a flat chronological list would misrepresent them.
+# Nested items are things that happened *inside* the entry above them —
+# internships during a degree, model releases during the current role. Four
+# internships overlap the Ph.D. and one ran during undergrad, so a flat
+# chronological list would misrepresent them.
 #
-# current  marks the node rendered with a filled dot
+# logo     file under images/logos/
+# current  renders the node with a filled dot
 
 - org: "Tencent Hunyuan"
   when: "2025.11 — Present"   # TODO 起始月份是我按博士毕业时间推的,请核对
   role: "Research Scientist, agentic coding"
   location: "Shenzhen, China"
+  logo: "tencent-hunyuan.svg"
   kind: work
   current: true
+  concurrent:
+    # The full Hunyuan logo is used once, above; releases carry the short Hy
+    # mark so the repeats don't read as clutter.
+    - org: "Hy3"
+      role: "Released"
+      when: "2026.07"
+      logo: "hy.svg"
+      url: "https://huggingface.co/tencent/Hy3"
+    - org: "Hy3-preview"
+      role: "Released — agentic coding contributed by our group"
+      when: "2026.04"
+      logo: "hy.svg"
+      url: "https://hy.tencent.com/research/hy3"
 
 - org: "The Chinese University of Hong Kong"
   when: "2021.08 — 2025.10"
   role: "Ph.D., advised by Prof. Michael R. Lyu"
   location: "Hong Kong"
+  logo: "cuhk.svg"
   kind: education
   concurrent:
     - org: "ByteBrain @ ByteDance"
       role: "Research Intern"
       when: "2024.11 — 2025.10"
       location: "China"
+      logo: "bytedance.svg"
     - org: "Azure Systems Research @ Microsoft Research"
       role: "Research Intern"
       when: "2024.06 — 2024.09"
       location: "Redmond, US"
+      logo: "microsoft.svg"
     - org: "DKI @ Microsoft Research Asia"
       role: "Research Intern"
       when: "2022.04 — 2022.07"
       location: "China"
+      logo: "microsoft.svg"
 
 - org: "Huazhong University of Science and Technology"
   when: "2017.09 — 2021.06"
   role: "B.Eng., Information Security"
   location: "Wuhan, China"
+  logo: "hust.svg"
   kind: education
   concurrent:
     - org: "DKI @ Microsoft Research Asia"
       role: "Research Intern"
       when: "2020.11 — 2021.06"
       location: "China"
+      logo: "microsoft.svg"
