@@ -533,9 +533,10 @@ ul, ol { list-style: none; }
 .footer-text a:hover { color: var(--link); }
 .footer-text .dim { color: var(--muted); }
 
-/* Sits slightly below the baseline so it reads as standing on the footer
-   rather than pasted into it. */
-.footer-homer { flex: none; width: 88px; margin-bottom: -26px; }
+/* Head-and-shoulders crop, so it reads at this size instead of becoming a thin
+   full-body sliver. Sits slightly below the baseline to look like it is
+   standing on the footer rather than pasted into it. */
+.footer-homer { flex: none; width: 96px; margin-bottom: -22px; }
 
 /* ==========================================================================
    Narrow screens
