@@ -8,16 +8,21 @@ description: "Peer-reviewed research on agentic coding, logging, and the reliabi
 {%- comment -%}
   Grouping by year without jekyll-group-by-array (not on the GitHub Pages
   allowlist): sort descending once, then emit a year heading whenever the year
-  changes as we walk the list.
+  changes as we walk the list. Journal-First entries carry a year like everything
+  else, so they interleave with the conference papers rather than forming their
+  own group.
 
-  Entries with no year yet (Journal-First papers whose prose carries no date)
-  sort to the end and land under "Journal-First".
-
-  A year heading is marked is-extra-only when that year contains no selected
-  papers, so the Selected view can hide the heading along with its contents.
+  A year heading is marked is-extra-only when that year holds no selected
+  papers, so the Selected view hides the heading along with its contents.
 {%- endcomment -%}
 
-{%- assign pubs = site.data.publications | sort: "year" | reverse -%}
+{%- comment -%}
+  No sort: _data/publications.yml is already in the author's own order, newest
+  first. Sorting by year and reversing would preserve the year grouping but
+  scramble the sequence *within* each year, because `reverse` undoes the stable
+  order too.
+{%- endcomment -%}
+{%- assign pubs = site.data.publications -%}
 {%- assign total = site.data.publications | size -%}
 
 <div class="page-head">
@@ -41,16 +46,14 @@ description: "Peer-reviewed research on agentic coding, logging, and the reliabi
     {%- assign shown_year = "__none__" -%}
     {%- for p in pubs -%}
 
-      {%- if p.year -%}{%- assign this_year = p.year | append: "" -%}
-      {%- else -%}{%- assign this_year = "Journal-First" -%}{%- endif -%}
+      {%- assign this_year = p.year | append: "" -%}
 
       {%- if this_year != shown_year -%}
         {%- assign shown_year = this_year -%}
         {%- comment -%} does this year hold any selected paper? {%- endcomment -%}
         {%- assign year_has_selected = false -%}
         {%- for q in pubs -%}
-          {%- if q.year -%}{%- assign qy = q.year | append: "" -%}
-          {%- else -%}{%- assign qy = "Journal-First" -%}{%- endif -%}
+          {%- assign qy = q.year | append: "" -%}
           {%- if qy == this_year and q.selected -%}{%- assign year_has_selected = true -%}{%- endif -%}
         {%- endfor %}
     <div class="pub-year{% unless year_has_selected %} is-extra-only{% endunless %}">

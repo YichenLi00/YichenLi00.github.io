@@ -1,8 +1,9 @@
 # Publications, newest first.
 #
 # venue   display tag; apostrophes normalised to ASCII '
-# year    grouping key. Journal-First entries carry no year in the
-#         original prose — those are marked TODO below and need one.
+# year    grouping key. The Journal-First entries carried no year in the
+#         original prose; theirs were read off their position in the old
+#         chronologically-ordered list.
 # authors plain string; the template bolds "Yichen Li" itself.
 # equal / corresponding  names carrying * and # markers
 # links   0-4 entries, rendered as buttons in order
@@ -22,7 +23,7 @@
   title: "TypeScript Repository Indexing for Code Agent Retrieval"
   authors: "Junsong Pu, Yichen Li, Zhuangbin Chen"
   where: "The IEEE/ACM International Conference on Automated Software Engineering (Tool Demonstration Track)"
-  selected: false
+  selected: true
 
 - venue: "TOSEM"
   year: 2026
@@ -54,7 +55,7 @@
   title: "Cascaded Code Editing: Large-Small Model Collaboration for Effective and Efficient Code Editing"
   authors: "Chaozheng Wang, Zezhou Yang, Shuzheng Gao, Cuiyun Gao, Zongjie Li, Yichen Li, Ting Peng, Hailiang Huang, Yuetang Deng, Michael R. Lyu"
   where: "The ACM International Conference on the Foundations of Software Engineering, Montreal, Canada"
-  selected: true
+  selected: false
   links:
     - { label: "Paper", url: "https://arxiv.org/abs/2604.19201" }
 
@@ -76,6 +77,16 @@
   selected: true
   links:
     - { label: "Paper", url: "https://arxiv.org/abs/2509.26463" }
+
+- venue: "TSE"
+  year: 2026
+  title: "CCISolver: End-to-End Detection and Repair of Method-Level Code-Comment Inconsistency"
+  authors: "Renyi Zhong, Yintong Huo, Wenwei Gu, Jinxi Kuang, Zhihan Jiang, Guangba Yu, Yichen Li, David Lo, Michael R. Lyu"
+  corresponding: ["Yichen Li"]
+  where: "IEEE Transactions on Software Engineering (Journal-First)"
+  selected: true
+  links:
+    - { label: "Paper", url: "https://arxiv.org/abs/2506.20558" }
 
 - venue: "ASE'25"
   year: 2025
@@ -109,7 +120,7 @@
   title: "Exploring Autonomous Agents: A Closer Look at Why They Fail When Completing Tasks"
   authors: "Ruofan Lu, Yichen Li, Yintong Huo"
   where: "The IEEE/ACM International Conference on Automated Software Engineering, Seoul, South Korea"
-  selected: false
+  selected: true
   links:
     - { label: "Paper", url: "https://arxiv.org/abs/2508.13143" }
 
@@ -118,7 +129,7 @@
   title: "Intent-based System Design and Operation"
   authors: "Vaastav Anand, Yichen Li, Alok Gautam Kumbhare, Celine Irvene, Chetan Bansal, Gagan Somashekar, Jonathan Mace, Pedro Las-Casas, and Rodrigo Fonseca"
   where: "Practical Adoption Challenges of ML for Systems (co-located with SOSP)"
-  selected: false
+  selected: true
   links:
     - { label: "Paper", url: "https://arxiv.org/pdf/2502.05984" }
 
@@ -155,7 +166,7 @@
   title: "L4: Diagnosing Large-scale LLM Training Failures via Automated Log Analysis"
   authors: "Zhihan Jiang, Junjie Huang, Guangba Yu, Zhuangbin Chen, Yichen Li, Renyi Zhong, Cong Feng, Yongqiang Yang, Zengyin Yang, Michael R. Lyu"
   where: "The ACM International Conference on the Foundations of Software Engineering, Trondheim, Norway"
-  selected: true
+  selected: false
   links:
     - { label: "Paper", url: "https://arxiv.org/abs/2503.20263" }
 
@@ -167,6 +178,24 @@
   selected: false
   links:
     - { label: "Paper", url: "https://dl.acm.org/doi/10.1145/3729397" }
+
+- venue: "TOSEM"
+  year: 2025
+  title: "Larger is Not Always Better: Exploring Small Open-Source Language Models in Logging Statement Generation"
+  authors: "Renyi Zhong, Yichen Li, Guangba Yu, Wenwei Gu, Jinxi Kuang, Yintong Huo, Michael R. Lyu"
+  where: "ACM Transactions on Software Engineering and Methodology (Journal-First)"
+  selected: true
+  links:
+    - { label: "Paper", url: "https://arxiv.org/abs/2505.16590" }
+
+- venue: "TOSEM"
+  year: 2025
+  title: "Automated Detection and Repair of Specific Defects in Logging Statements"
+  authors: "Renyi Zhong, Yichen Li, Jinxi Kuang, Wenwei Gu, Yintong Huo, Michael R. Lyu"
+  where: "ACM Transactions on Software Engineering and Methodology (Journal-First)"
+  selected: true
+  links:
+    - { label: "Paper", url: "https://arxiv.org/abs/2408.03101" }
 
 - venue: "FSE'24"
   year: 2024
@@ -183,7 +212,7 @@
   title: "LILAC: Log Parsing using LLMs with Adaptive Parsing Cache"
   authors: "Zhihan Jiang, Jinyang Liu, Zhuangbin Chen, Yichen Li, Junjie Huang, Yintong Huo, Pinjia He, Jiazhen Gu and Michael R. Lyu"
   where: "The ACM International Conference on the Foundations of Software Engineering, Porto de Galinhas, Brazil"
-  selected: true
+  selected: false
   links:
     - { label: "Paper", url: "https://arxiv.org/pdf/2310.01796.pdf" }
     - { label: "Code", url: "https://github.com/logpai/LILAC" }
@@ -238,6 +267,17 @@
     - { label: "GitGuardian", url: "https://blog.gitguardian.com/yes-github-copilot-can-leak-secrets/" }
     - { label: "The Register", url: "https://www.theregister.com/2023/09/19/github_copilot_amazon_api/" }
 
+- venue: "TSE"
+  year: 2024
+  title: "Exploring the Effectiveness of LLMs in Automated Logging Statement Generation: An Empirical Study"
+  authors: "Yichen Li, Yintong Huo, Zhihan Jiang, Renyi Zhong, Pinjia He, Yuxin Su, Lionel C. Briand and Michael R. Lyu"
+  equal: ["Yichen Li", "Yintong Huo"]
+  where: "IEEE Transactions on Software Engineering (Journal-First)"
+  selected: true
+  links:
+    - { label: "Paper", url: "https://arxiv.org/pdf/2307.05950" }
+    - { label: "Code", url: "https://github.com/logpai/LogBench" }
+
 - venue: "ASE'23"
   year: 2023
   title: "AutoLog: A Log Sequence Synthesis Framework for Anomaly Detection"
@@ -250,46 +290,7 @@
     - { label: "Code", url: "https://github.com/logpai/AutoLog" }
 
 - venue: "TSE"
-  year:            # TODO 原文无年份(Journal-First),需补
-  title: "CCISolver: End-to-End Detection and Repair of Method-Level Code-Comment Inconsistency"
-  authors: "Renyi Zhong, Yintong Huo, Wenwei Gu, Jinxi Kuang, Zhihan Jiang, Guangba Yu, Yichen Li, David Lo, Michael R. Lyu"
-  corresponding: ["Yichen Li"]
-  where: "IEEE Transactions on Software Engineering (Journal-First)"
-  selected: true
-  links:
-    - { label: "Paper", url: "https://arxiv.org/abs/2506.20558" }
-
-- venue: "TOSEM"
-  year:            # TODO 原文无年份(Journal-First),需补
-  title: "Larger is Not Always Better: Exploring Small Open-Source Language Models in Logging Statement Generation"
-  authors: "Renyi Zhong, Yichen Li, Guangba Yu, Wenwei Gu, Jinxi Kuang, Yintong Huo, Michael R. Lyu"
-  where: "ACM Transactions on Software Engineering and Methodology (Journal-First)"
-  selected: false
-  links:
-    - { label: "Paper", url: "https://arxiv.org/abs/2505.16590" }
-
-- venue: "TOSEM"
-  year:            # TODO 原文无年份(Journal-First),需补
-  title: "Automated Detection and Repair of Specific Defects in Logging Statements"
-  authors: "Renyi Zhong, Yichen Li, Jinxi Kuang, Wenwei Gu, Yintong Huo, Michael R. Lyu"
-  where: "ACM Transactions on Software Engineering and Methodology (Journal-First)"
-  selected: false
-  links:
-    - { label: "Paper", url: "https://arxiv.org/abs/2408.03101" }
-
-- venue: "TSE"
-  year:            # TODO 原文无年份(Journal-First),需补
-  title: "Exploring the Effectiveness of LLMs in Automated Logging Statement Generation: An Empirical Study"
-  authors: "Yichen Li, Yintong Huo, Zhihan Jiang, Renyi Zhong, Pinjia He, Yuxin Su, Lionel C. Briand and Michael R. Lyu"
-  equal: ["Yichen Li", "Yintong Huo"]
-  where: "IEEE Transactions on Software Engineering (Journal-First)"
-  selected: true
-  links:
-    - { label: "Paper", url: "https://arxiv.org/pdf/2307.05950" }
-    - { label: "Code", url: "https://github.com/logpai/LogBench" }
-
-- venue: "TSE"
-  year:            # TODO 原文无年份(Journal-First),需补
+  year: 2023
   title: "Meta-path based attentional graph learning model for vulnerability detection"
   authors: "Xin-Cheng Wen, Cuiyun Gao, Jiaxin Ye, Yichen Li, Zhihong Tian, Yan Jia, Xuan Wang"
   where: "IEEE Transactions on Software Engineering (Journal-First)"
@@ -298,7 +299,7 @@
     - { label: "Paper", url: "https://ieeexplore.ieee.org/abstract/document/10376026" }
 
 - venue: "OSR"
-  year:            # TODO 原文无年份(Journal-First),需补
+  year: 2023
   title: "An Intelligent Framework for Timely, Accurate, and Comprehensive Cloud Incident Detection"
   authors: "Yichen Li, Xu Zhang, Shilin He, Zhuangbin Chen, Yu Kang, Jinyang Liu, Liqun Li, Yingnong Dang, Feng Gao, Zhangwei Xu, Saravan Rajmohan, Qingwei Lin, Dongmei Zhang, Michael R Lyu"
   where: "ACM SIGOPS Operating Systems Review"
@@ -307,7 +308,7 @@
     - { label: "Paper", url: "https://zbchern.github.io/papers/sigops22.pdf" }
 
 - venue: "TSE"
-  year:            # TODO 原文无年份(Journal-First),需补
+  year: 2023
   title: "Revisiting, benchmarking and exploring API recommendation: How far are we?"
   authors: "Yun Peng, Shuqing Li, Wenwei Gu, Yichen Li, Wenxuan Wang, Cuiyun Gao, Michael R Lyu"
   where: "IEEE Transactions on Software Engineering (Journal-First)"
