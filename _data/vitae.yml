@@ -6,6 +6,7 @@
 # chronological list would misrepresent them.
 #
 # logo     square icon under images/logos/ — all real marks
+# role     optional on nested entries; the releases carry just a name and date
 # url      optional; makes the entry name a link
 # current  renders the node with a filled dot
 
@@ -20,12 +21,10 @@
     # Hy3 has no icon of its own — the roundel in its wordmark is the Hunyuan
     # mark, so the releases reuse that.
     - org: "Hy3"
-      role: "Released"
       when: "2026.07"
       logo: "tencent-hunyuan.svg"
       url: "https://huggingface.co/tencent/Hy3"
     - org: "Hy3-preview"
-      role: "Released — agentic training contributed by our group"
       when: "2026.04"
       logo: "tencent-hunyuan.svg"
       url: "https://hy.tencent.com/research/hy3"
