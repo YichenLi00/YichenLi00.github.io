@@ -56,36 +56,54 @@ redirect_from:
   <span class="anchor-alias" id="-experiences"></span>
   <h2 class="sec-title">{% include icon.html name="suitcase" %} <span>Vitæ</span></h2>
   <div class="tl">
+    {%- comment -%}
+      Every row — lead or nested — is the same three-track grid (date | gutter |
+      content), so all dates land on the same rail coordinate.
+
+      Year ticks: `when` starts with the year, so slicing four characters gives
+      the label. One is emitted whenever the lead year changes on the way down,
+      which turns the rail into a measured axis rather than a plain divider.
+    {%- endcomment -%}
+    {%- assign tick = "" -%}
     {%- for row in site.data.vitae %}
+      {%- assign row_year = row.when | slice: 0, 4 -%}
     <div class="tl-item{% if row.current %} is-current{% endif %}">
-      <div class="tl-head">
-        <span class="tl-flag">
-          {%- include logo.html logo=row.logo -%}
-          <span class="tl-org">{{ row.org }}</span>
-        </span>
+      <div class="tl-row">
+        {%- if row_year != tick %}{%- assign tick = row_year %}
+        <span class="tl-tick"><span>{{ row_year }}</span></span>
+        {%- endif %}
         <span class="tl-when">{{ row.when }}</span>
+        <span class="tl-node"></span>
+        <div class="tl-main">
+          <span class="tl-flag">
+            {%- include logo.html logo=row.logo -%}
+            <span class="tl-org">{{ row.org }}</span>
+          </span>
+          <span class="tl-role">
+            {{ row.role }}
+            {%- if row.location %} <span class="tl-loc">· {{ row.location }}</span>{% endif %}
+          </span>
+        </div>
       </div>
-      <div class="tl-role">
-        {{ row.role }}
-        {%- if row.location %} <span class="tl-loc">· {{ row.location }}</span>{% endif %}
-      </div>
+
       {%- if row.concurrent %}
-      <ul class="tl-nested">
+      <div class="tl-nested">
         {%- for c in row.concurrent %}
-        <li>
-          <span class="tl-head">
+        <div class="tl-row">
+          <span class="tl-when">{{ c.when }}</span>
+          <span class="tl-node"></span>
+          <div class="tl-main">
             <span class="tl-flag is-sub">
               {%- include logo.html logo=c.logo -%}
               <span class="tl-org">{% if c.url %}<a href="{{ c.url }}">{{ c.org }}</a>{% else %}{{ c.org }}{% endif %}</span>
             </span>
-            <span class="tl-when">{{ c.when }}</span>
-          </span>
-          {%- if c.role or c.location %}
-          <span class="tl-role">{{ c.role }}{% if c.location %} <span class="tl-loc">· {{ c.location }}</span>{% endif %}</span>
-          {%- endif %}
-        </li>
+            {%- if c.role or c.location %}
+            <span class="tl-role">{{ c.role }}{% if c.location %} <span class="tl-loc">· {{ c.location }}</span>{% endif %}</span>
+            {%- endif %}
+          </div>
+        </div>
         {%- endfor %}
-      </ul>
+      </div>
       {%- endif %}
     </div>
     {%- endfor %}
