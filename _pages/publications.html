@@ -73,7 +73,15 @@ description: "Peer-reviewed research on agentic training, logging, and the relia
         </div>
 
         <div class="pub-authors">
-          {%- assign names = p.authors | split: ", " -%}
+          {%- comment -%}
+            Two entries end "… Yichen Li and Xiaoxue Ren", so splitting on ", "
+            alone leaves "Yichen Li and Xiaoxue Ren" as one token and the name
+            never matches. Normalise " and " to a comma first. The rendered list
+            is then comma-separated throughout, which is also more consistent
+            than some entries ending in "and" and most not.
+          {%- endcomment -%}
+          {%- assign author_str = p.authors | replace: ", and ", ", " | replace: " and ", ", " -%}
+          {%- assign names = author_str | split: ", " -%}
           {%- for n in names -%}
             {%- if n == site.author.name -%}<span class="me">{{ n }}</span>{%- else -%}{{ n }}{%- endif -%}
             {%- if p.equal contains n %}<sup>*</sup>{% endif -%}

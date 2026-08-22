@@ -23,7 +23,7 @@
   title: "TypeScript Repository Indexing for Code Agent Retrieval"
   authors: "Junsong Pu, Yichen Li, Zhuangbin Chen"
   where: "The IEEE/ACM International Conference on Automated Software Engineering (Tool Demonstration Track)"
-  selected: true
+  selected: false
 
 - venue: "TOSEM"
   year: 2026
@@ -64,7 +64,7 @@
   title: "Proactive Change Risk Detection in Production Cloud Systems: ByteDance Experience"
   authors: "Jinyang Liu, Yichen Li, Tieying Zhang, Binbin Chen, Xiao He, Zhihan Jiang, Haipeng Zhang, Gang Wu, Yi Li"
   where: "The European Conference on Computer Systems, Edinburgh, United Kingdom"
-  selected: true
+  selected: false
   links:
     - { label: "Paper", url: "https://dl.acm.org/doi/10.1145/3767295.3803614" }
 
@@ -102,7 +102,7 @@
   title: "ErrorPrism: Reconstructing Error Propagation Paths in Cloud Service Systems"
   authors: "Junsong Pu, Yichen Li, Zhuangbin Chen, Jinyang Liu, Zhihan Jiang, Jianjun Chen, Rui Shi, Zibin Zheng, Tieying Zhang"
   where: "The IEEE/ACM International Conference on Automated Software Engineering, Seoul, South Korea"
-  selected: true
+  selected: false
   links:
     - { label: "Paper", url: "https://arxiv.org/abs/2509.26463" }
 
@@ -111,7 +111,7 @@
   title: "LogPilot: Intent-aware and Scalable Alert Diagnosis for Large-scale Online Service Systems"
   authors: "Zhihan Jiang, Jinyang Liu, Yichen Li, Haiyu Huang, Xiao He, Tieying Zhang, Jianjun Chen, Yi Li, Rui Shi, Michael R. Lyu"
   where: "The IEEE/ACM International Conference on Automated Software Engineering, Seoul, South Korea"
-  selected: true
+  selected: false
   links:
     - { label: "Paper", url: "https://arxiv.org/abs/2509.25874" }
 
@@ -120,7 +120,7 @@
   title: "Exploring Autonomous Agents: A Closer Look at Why They Fail When Completing Tasks"
   authors: "Ruofan Lu, Yichen Li, Yintong Huo"
   where: "The IEEE/ACM International Conference on Automated Software Engineering, Seoul, South Korea"
-  selected: true
+  selected: false
   links:
     - { label: "Paper", url: "https://arxiv.org/abs/2508.13143" }
 
@@ -129,7 +129,7 @@
   title: "Intent-based System Design and Operation"
   authors: "Vaastav Anand, Yichen Li, Alok Gautam Kumbhare, Celine Irvene, Chetan Bansal, Gagan Somashekar, Jonathan Mace, Pedro Las-Casas, and Rodrigo Fonseca"
   where: "Practical Adoption Challenges of ML for Systems (co-located with SOSP)"
-  selected: true
+  selected: false
   links:
     - { label: "Paper", url: "https://arxiv.org/pdf/2502.05984" }
 
@@ -184,7 +184,7 @@
   title: "Larger is Not Always Better: Exploring Small Open-Source Language Models in Logging Statement Generation"
   authors: "Renyi Zhong, Yichen Li, Guangba Yu, Wenwei Gu, Jinxi Kuang, Yintong Huo, Michael R. Lyu"
   where: "ACM Transactions on Software Engineering and Methodology (Journal-First)"
-  selected: true
+  selected: false
   links:
     - { label: "Paper", url: "https://arxiv.org/abs/2505.16590" }
 
@@ -193,7 +193,7 @@
   title: "Automated Detection and Repair of Specific Defects in Logging Statements"
   authors: "Renyi Zhong, Yichen Li, Jinxi Kuang, Wenwei Gu, Yintong Huo, Michael R. Lyu"
   where: "ACM Transactions on Software Engineering and Methodology (Journal-First)"
-  selected: true
+  selected: false
   links:
     - { label: "Paper", url: "https://arxiv.org/abs/2408.03101" }
 
@@ -260,7 +260,7 @@
   title: "Your Code Secret Belongs to Me: Neural Code Completion Tools Can Memorize Hard-coded Credentials"
   authors: "Yizhan Huang, Yichen Li, Weibin Wu, Jianping Zhang and Michael R. Lyu"
   where: "The ACM International Conference on the Foundations of Software Engineering, Porto de Galinhas, Brazil"
-  selected: true
+  selected: false
   links:
     - { label: "Paper", url: "https://arxiv.org/pdf/2309.07639" }
     - { label: "Code", url: "https://github.com/HCR-Repo/HCR" }
@@ -284,7 +284,7 @@
   authors: "Yintong Huo, Yichen Li, Yuxin Su, Pinjia He, Zifan Xie and Michael R. Lyu"
   equal: ["Yichen Li", "Yintong Huo"]
   where: "The IEEE/ACM International Conference on Automated Software Engineering, Kirchberg, Luxembourg"
-  selected: true
+  selected: false
   links:
     - { label: "Paper", url: "https://arxiv.org/abs/2308.09324" }
     - { label: "Code", url: "https://github.com/logpai/AutoLog" }

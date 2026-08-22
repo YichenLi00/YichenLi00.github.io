@@ -348,10 +348,12 @@ ul, ol { list-style: none; }
 
 /* Year tick: hairline across the date column only, label at the far left, so
    the rail reads as a measured axis rather than a section divider. */
+/* The tick used to span the whole date column, striking through the date text.
+   It now stops well short of it — just enough rule to read as an axis mark. */
 .tl-tick {
   position: absolute;
   left: 0;
-  width: calc(var(--rail) - var(--gutter));
+  width: 62px;
   top: 13px;
   border-top: 1px dashed var(--rule);
   pointer-events: none;
@@ -537,27 +539,34 @@ ul, ol { list-style: none; }
   gap: 12px;
   padding: 30px 0 4px;
 }
+.pub-year b { min-width: 118px; }   /* same track as the venue tags */
 .pub-year b { font-family: var(--f-head); font-size: 15px; font-weight: 700; }
 .pub-year i { flex: 1; height: 1px; background: var(--rule); }
 
+/* Fixed tag column so every title starts on the same axis. Venue tags run from
+   3 characters ("TSE") to 16 ("ICSE-LLM4Code'24"); with an auto-width tag the
+   titles began at four different x positions down the page. The longest tags
+   wrap inside their column rather than pushing the titles across. */
 .pub {
-  display: flex;
-  gap: 14px;
+  display: grid;
+  grid-template-columns: 118px 1fr;
+  column-gap: 16px;
   padding: 15px 0;
   border-bottom: 1px solid var(--rule);
 }
 .pub:last-child { border-bottom: 0; }
 
 .pub-tag {
-  flex: none;
-  align-self: flex-start;
+  justify-self: start;
+  align-self: start;
   margin-top: 2px;
+  max-width: 100%;
   padding: 3px 7px;
   font-family: var(--f-head);
   font-size: 10.5px;
   font-weight: 700;
   letter-spacing: .02em;
-  white-space: nowrap;          /* two tags contain spaces; must not wrap */
+  line-height: 1.35;
   color: var(--tag-text);
   background: var(--tag-bg);
   border: 1px solid var(--tag-border);
@@ -688,7 +697,9 @@ ul, ol { list-style: none; }
   .page-head { padding-top: 100px; }
   .page-title { font-size: 30px; }
 
-  .pub { flex-direction: column; gap: 8px; }
+  /* 118px of tag column is too much at this width — stack instead. */
+  .pub { grid-template-columns: 1fr; row-gap: 8px; }
+  .pub-year b { min-width: 0; }
 
   .contact-row { flex-direction: column; gap: 3px; }
   .contact-label { width: auto; }
