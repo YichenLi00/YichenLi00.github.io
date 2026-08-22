@@ -284,7 +284,7 @@
   authors: "Yintong Huo, Yichen Li, Yuxin Su, Pinjia He, Zifan Xie and Michael R. Lyu"
   equal: ["Yichen Li", "Yintong Huo"]
   where: "The IEEE/ACM International Conference on Automated Software Engineering, Kirchberg, Luxembourg"
-  selected: false
+  selected: true
   links:
     - { label: "Paper", url: "https://arxiv.org/abs/2308.09324" }
     - { label: "Code", url: "https://github.com/logpai/AutoLog" }
