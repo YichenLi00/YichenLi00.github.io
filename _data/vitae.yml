@@ -21,10 +21,14 @@
     # Hy3 has no icon of its own — the roundel in its wordmark is the Hunyuan
     # mark, so the releases reuse that.
     #
-    # Both point at HuggingFace rather than hy.tencent.com: the official blog
+    # All point at HuggingFace rather than hy.tencent.com: the official blog
     # serves lang="zh-CN" and switches language in the browser, so an English
     # reader isn't guaranteed English. The model cards are English and link on
     # to the tech report.
+    - org: "Hy4-preview"
+      when: "2026.08"
+      logo: "tencent-hunyuan.svg"
+      url: "https://huggingface.co/tencent/Hy4-preview"
     - org: "Hy3"
       when: "2026.07"
       logo: "tencent-hunyuan.svg"
