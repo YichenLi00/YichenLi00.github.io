@@ -21,10 +21,17 @@
     # Hy3 has no icon of its own — the roundel in its wordmark is the Hunyuan
     # mark, so the releases reuse that.
     #
-    # All point at HuggingFace rather than hy.tencent.com: the official blog
+    # They point at HuggingFace rather than hy.tencent.com: the official blog
     # serves lang="zh-CN" and switches language in the browser, so an English
     # reader isn't guaranteed English. The model cards are English and link on
     # to the tech report.
+    #
+    # Hy4 shipped API-only; tencent/Hy4 is still private, so it points at the
+    # English press release until the weights go up.
+    - org: "Hy4"
+      when: "2026.11"
+      logo: "tencent-hunyuan.svg"
+      url: "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/"
     - org: "Hy4-preview"
       when: "2026.08"
       logo: "tencent-hunyuan.svg"
